@@ -2,3 +2,10 @@ body,
 html {
     font-family: 'Roboto Condensed', serif;
 }
+
+
+/* Cambiar el color de fondo del diálogo */
+.swal2-popup {
+    background-color: rgb(25, 24, 24);
+    color: white;
+}

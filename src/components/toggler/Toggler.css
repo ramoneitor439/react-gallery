@@ -11,7 +11,27 @@
     border-radius: 100%;
     display: flex;
 
+    transition: background-color 0.2s;
     box-shadow: 3px 3px 5px rgb(117, 117, 117);
+}
+
+.toggler-tooltip {
+    position: absolute;
+    top: -50%;
+    opacity: 0;
+    transition: opacity 0.2s;
+    background-color: #000000;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+
+.form-toggler:hover {
+    background-color: rgb(97, 98, 98);
+}
+
+.form-toggler:hover .toggler-tooltip {
+    opacity: 1;
 }
 
 @media(max-width: 700px) {

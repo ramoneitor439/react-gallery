@@ -70,6 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.2s;
 }
 
 .btn-edit {
@@ -83,19 +84,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.img-tooltip {
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+    transition: opacity 0.2s;
+    background-color: #000000;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
 }
 
 .btn-delete:hover {
     background-color: rgb(119, 32, 32);
 }
 
+.btn-delete:hover .img-tooltip {
+    opacity: 1;
+}
+
 .btn-edit:hover {
     background-color: rgb(5, 5, 139);
+}
+
+.btn-edit:hover .img-tooltip {
+    opacity: 1;
 }
 
 .img-description {
     max-width: 90%;
 }
+
+
+
 
 @media(max-width: 700px) {
     .img-container {

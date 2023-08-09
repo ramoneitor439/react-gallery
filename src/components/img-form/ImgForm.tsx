@@ -39,9 +39,10 @@ export const ImgForm: React.FC<AddFormProps> = ({ heading, title, description, i
                     <img src={img ?? noPicture} alt="Picture" className='img-form-source' />
                     <button style={{ cursor: 'pointer' }} type='button' onClick={selectImgage} className='btn-picture img-input'>
                         <Camera
-                            size={20}
+                            size={30}
                             color='black'
                         />
+                        <span className='img-form-tooltip'>Elegir foto</span>
                     </button>
                     {isImgEmpty && <p className='text-error'>No hay imagen seleccionada</p>}
 

@@ -40,6 +40,18 @@
     width: 100%;
     border-radius: 5px;
     font-family: 'Roboto Condensed', serif;
+    border: solid;
+    border-color: white;
+
+    transition: border-color 0.2s;
+}
+
+.img-input:active {
+    border-color: rgb(133, 133, 133);
+}
+
+.img-input:hover {
+    border-color: rgb(133, 133, 133);
 }
 
 .img-description {
@@ -62,6 +74,8 @@
     width: 100%;
     border: none;
     margin-top: 5px;
+    transition: background-color 0.2s;
+    width: 20%;
 }
 
 .btn-picture:hover {
@@ -79,6 +93,7 @@
     border-radius: 5px;
     font-weight: bold;
     border: none;
+    transition: background-color 0.2s;
 }
 
 .btn-add:hover {
@@ -87,6 +102,21 @@
 
 .text-error {
     color: red;
+}
+
+.img-form-tooltip {
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    background-color: #000000;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-picture:hover .img-form-tooltip {
+    opacity: 1;
 }
 
 @media(max-width: 600px) {

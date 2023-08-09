@@ -32,6 +32,10 @@ function App() {
   let [isUpdateImgEmpty, setIsUpdateImgEmpty] = useState(false)
 
   const toggleForm = () => {
+    setIsTitleEmpty(false)
+    setIsDescriptionEmpty(false)
+    setIsImgEmpty(false)
+
     let target = document.querySelector(".form-section")
     let target2 = document.querySelector('.update-section')
 
@@ -135,7 +139,7 @@ function App() {
     Swal.fire({
       icon: 'success',
       title: 'Completado!',
-      text: 'La imagen ha sido editada con éxito!'
+      text: 'La imagen ha sido editada con éxito!',
     })
     e.target.disabled = false
 

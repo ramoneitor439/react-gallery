@@ -40,17 +40,19 @@ export const Image: React.FC<ImageProps> = ({ title, description, img, onDeleteI
                         <h1 className="img-title">{title}</h1>
                         <p className="img-description">{description}</p>
                         <div className="delete-container">
-                            <a style={{ cursor: 'pointer' }} onClick={deleteImage} role="button" className="btn-delete" >
+                            <a title='Eliminar' style={{ cursor: 'pointer' }} onClick={deleteImage} role="button" className="btn-delete" >
                                 <Trash
                                     size={15}
                                     color="white"
                                 />
+                                <span className='img-tooltip'>Eliminar</span>
                             </a>
                             <a style={{ cursor: 'pointer' }} onClick={onUpdateImage} role="button" className="btn-edit" >
                                 <Edit
                                     size={15}
                                     color="white"
                                 />
+                                <span className='img-tooltip'>Editar</span>
                             </a>
                         </div>
                     </div>
