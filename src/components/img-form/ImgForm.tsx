@@ -56,7 +56,7 @@ export const ImgForm: React.FC<AddFormProps> = ({ heading, title, description, i
                 <div className='img-input-container'>
                     <label htmlFor="description">Descripción</label>
                     <textarea placeholder='Escriba la descripción aquí...' style={{ resize: 'none' }} onChange={onChangeDescription} name="description" className='img-input img-description' value={description}></textarea>
-                    {isDescriptionEmpty && <p className='text-error'>La descripción está vac</p>}
+                    {isDescriptionEmpty && <p className='text-error'>La descripción está vacía</p>}
                 </div>
                 <div className='img-input-container'>
                     <button style={{ cursor: 'pointer' }} onClick={uploadImage} type="button" className='btn-add'>Completar</button>
